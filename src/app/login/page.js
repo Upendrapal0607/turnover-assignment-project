@@ -1,10 +1,10 @@
-'use client'
-import LoginPage from "../components/login"
- const page = () => {
+"use client";
+import LoginPage from "../components/login";
+const page = () => {
   return (
     <div>
-   <LoginPage/> 
+      <LoginPage />
     </div>
-  )
-}
-export default page
+  );
+};
+export default page;

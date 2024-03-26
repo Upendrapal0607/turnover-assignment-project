@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# turnover assignment
+# Project Title
+  Task Ecomerce category project.
+## Introduction
+This is a intrested category managegmet app which allow to select multiple category base on your Interest and store it for your future
+time save.That will help you to find your category immediately.
+## Project Type
+It is a Fullstack solo project
 
-## Getting Started
+## Video Walkthrough of the project
+   Link- [Video](https://drive.google.com/file/d/1o6ItGE_s_7sgDrEjIwzzbQzFVj664wXg/view?usp=sharing)
 
-First, run the development server:
+## Installation & Getting started
+Detailed instructions on how to install, configure, and get the project running. For your local system.
 
+Locally it will run:- http://localhost:3000/
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+clone git clone https://github.com/Upendrapal0607/turnover-assignment-project.git
+cd /turnover-assignment-project
+npm npm install
+npm npm run dev
 ```
+## API Endpoints
+### User 
+- GET  /api/user - Retrive the user list
+- POST /api/user  - new registation 
+- POST /api/user/login/ - login exist user
+ 
+### Product 
+- GET /api/products/ - retrieve all Product list 
+- PATCH /api/products/:productId - Update the Product and make it selected(Intrested)
+ 
+## Technology Stack
+- Node.js
+- Next.js
+- mysql
+- Tailwind css
+- Other libraries/modules
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Thanks,
+## UPENDRA PAL
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

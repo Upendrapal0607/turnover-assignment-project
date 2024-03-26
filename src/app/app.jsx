@@ -1,12 +1,11 @@
-
-import React from 'react'
+import React from "react";
 import { useRouter } from "next/navigation";
 
 export const App = () => {
-  const navigate = useRouter()
-const halndleLogin = () => {
-  navigate.replace("/login")
-};
+  const navigate = useRouter();
+  const halndleLogin = () => {
+    navigate.replace("/login");
+  };
   return (
     <div className="flex flex-col  w-full min-h-screen bg-white">
       <h1 className="text-center text-4xl font-bold text-gray-800 mt-16">
@@ -20,7 +19,10 @@ const halndleLogin = () => {
       </p>
       <p className=" text-center text-4xl font-bold text-gray-400 mt-4">
         Click here for login{" "}
-        <span className="text-green-500 cursor-pointer" onClick={halndleLogin}>LOGIN or SIGN UP</span> and enjoy it...
+        <span className="text-green-500 cursor-pointer" onClick={halndleLogin}>
+          LOGIN or SIGN UP
+        </span>{" "}
+        and enjoy it...
       </p>
       <img
         className="m-auto text-gray-100 text-4xl font-bold bg-gray-500 hover:bg-gray-700 hover:text-white 
@@ -29,5 +31,5 @@ const halndleLogin = () => {
         alt=""
       />
     </div>
-  )
-}
+  );
+};
