@@ -12,7 +12,6 @@ const page = () => {
   const InRef = useRef();
   const [page, setPage] = useState(1);
   const getProduct = async () => {
-    console.log(Math.floor(total / products.length));
     const response = await axios.get(
       `http://localhost:3000/api/products?page=${page}&limit=${6}`
     );
