@@ -7,7 +7,10 @@ import LoginPage from "../components/login";
 
 const page = () => {
   const [products, setProducts] = useState([]);
-   const tokenData = JSON.parse(localStorage.getItem("token"));
+ 
+   var tokenData = JSON.parse(localStorage.getItem("token"));
+
+
 
   const [total, setTotal] = useState(50);
   const InRef = useRef();
