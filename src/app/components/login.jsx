@@ -1,5 +1,4 @@
 "use client"
-import axios from "axios";
 import React, { useState } from "react";
 import { loginUser } from "../controller";
 import { useRouter } from "next/navigation";
