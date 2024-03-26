@@ -1,7 +1,8 @@
 import { query } from '@/app/config/db';
 export async function GET(request) {
     try {
-        const params = new URL(request.url).searchParams;
+        const url = new URL(request.url);
+        const params = url.searchParams;
         const page = parseInt(params.get('page')) || 1;
         const limit = parseInt(params.get('limit')) || 6;
         const offset = (page - 1) * limit;
