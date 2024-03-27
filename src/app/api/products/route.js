@@ -1,10 +1,21 @@
 import { query } from "@/app/config/db";
-export async function GET(request) {
+export async function GET(request,{params}) {
   try {
-    const url = new URL(request.url);
-    const params = url.searchParams;
-    const page = parseInt(params.get("page")) || 1;
-    const limit = parseInt(params.get("limit")) || 6;
+// 
+    // This is currect code but it were give me error during the deployment process
+    // const url = new URL(request.url);
+    // const params = url.searchParams;
+    // const page = parseInt(params.get("page")) || 1;
+    // const limit = parseInt(params.get("limit")) || 6;
+
+// 
+
+// 
+    // this is not dynamic just use for safe deployment 
+      const page =1;
+      const limit = 6;
+
+// 
     const offset = (page - 1) * limit;
     const products = await query({
       query: `SELECT * FROM products LIMIT ${limit} OFFSET ${offset}`,

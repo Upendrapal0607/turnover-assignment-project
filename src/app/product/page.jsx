@@ -23,8 +23,9 @@ const Page = () => {
 
   const getProduct = async () => {
     const response = await axios.get(
-      `http://localhost:3000/api/products?page=${page}&limit=${6}`
+      `http://localhost:3000/api/products/${page}`
     );
+
     setProducts(response?.data?.data);
     setTotal(response?.data?.total);
   };
