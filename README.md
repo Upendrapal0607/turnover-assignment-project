@@ -6,7 +6,8 @@ This is a intrested category managegmet app which allow to select multiple categ
 time save.That will help you to find your category immediately.
 ## Project Type
 It is a Fullstack solo project
-
+## Project Link
+Link - [ECOMERCE APP](https://turnover-assignment-project.vercel.app/)
 ## Video Walkthrough of the project
    Link- [Video](https://drive.google.com/file/d/1o6ItGE_s_7sgDrEjIwzzbQzFVj664wXg/view?usp=sharing)
 

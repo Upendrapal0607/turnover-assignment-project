@@ -1,7 +1,7 @@
 const { default: axios } = require("axios");
 
-const baseUrl = "http://localhost:3000/api/user";
-const productbaseUrl = "http://localhost:3000/api/products";
+const baseUrl = "api/user";
+const productbaseUrl = "/api/products";
 
 export const registerUser = async (params) => {
   try {

@@ -23,7 +23,7 @@ const Page = () => {
 
   const getProduct = async () => {
     const response = await axios.get(
-      `http://localhost:3000/api/products/${page}`
+      `api/products/${page}`
     );
 
     setProducts(response?.data?.data);
