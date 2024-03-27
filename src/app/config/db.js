@@ -1,5 +1,5 @@
 import mysql from "mysql2/promise";
-
+require("dotenv").config();
 export async function query({ query, values = [] }) {
   const dbconnection = await mysql.createConnection({
     host: process.env.MYSQL_HOST,
