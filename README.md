@@ -38,6 +38,8 @@ npm npm run dev
 - Tailwind css
 - Other libraries/modules
 
+## Note :
+- Try to run it locally because some time backend is through Errrors
 
 # Thanks,
 ## UPENDRA PAL

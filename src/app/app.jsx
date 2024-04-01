@@ -19,7 +19,7 @@ export const App = () => {
       </p>
       <p className=" text-center text-4xl font-bold text-gray-400 mt-4">
         Click here for login{" "}
-        <span className="text-green-500 cursor-pointer" onClick={halndleLogin}>
+        <span className="text-green-500 cursor-pointer hover:text-green-700 hover:border-b-green-700 hover:border-b-2" onClick={halndleLogin}>
           LOGIN or SIGN UP
         </span>{" "}
         and enjoy it...

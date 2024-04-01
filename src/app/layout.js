@@ -26,7 +26,9 @@ export default function RootLayout({ children }) {
         </div>
       <div className="flex items-center justify-between h-16" >
       <div className="flex items-center justify-between" >
-       <h1 className="font-bold text-[32px]">ECOMERCE</h1>
+      <a href="/">
+       <h1 className="font-bold text-[32px] cursor-pointer">ECOMERCE</h1>
+       </a>
         </div>
         <div className="sm:flex items-center hidden justify-between h-16 gap-8 font-semibold text-base" >
         <h3>Categories</h3>
