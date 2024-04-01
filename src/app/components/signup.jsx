@@ -25,16 +25,16 @@ const SignUp = ({ userDetails, setUserDetails, setIsMailTrue, setOtp }) => {
   return (
     <div className="min-h-screen bg-white flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div
-        className="sm:mx-auto sm:w-full sm:max-w-md bg-white"
+        className="sm:mx-auto sm:w-[576px] sm:h-[691px] sm:max-w-[576px] bg-white"
         style={{ border: "1px solid #CFD8DC", borderRadius: "14px" }}
       >
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+        <h2 className="mt-8 text-center text-3xl font-semibold text-gray-900">
           Create an account
         </h2>
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className=" py-8 px-4 sm:rounded-lg sm:px-10">
-            <form className="space-y-6 text-left" onSubmit={handleNavigate}>
+            <form className="space-y-8 text-left" onSubmit={handleNavigate}>
               <div>
                 <label
                   htmlFor="name"
@@ -51,7 +51,7 @@ const SignUp = ({ userDetails, setUserDetails, setIsMailTrue, setOtp }) => {
                     name="username"
                     type="text"
                     required
-                    className="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#C1C1C1] focus:border-[#C1C1C1] sm:text-sm"
                   />
                 </div>
               </div>
@@ -72,7 +72,7 @@ const SignUp = ({ userDetails, setUserDetails, setIsMailTrue, setOtp }) => {
                     name="email"
                     autoComplete="email"
                     required
-                    className="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#C1C1C1] focus:border-[#C1C1C1] sm:text-sm"
                   />
                 </div>
               </div>
@@ -93,7 +93,7 @@ const SignUp = ({ userDetails, setUserDetails, setIsMailTrue, setOtp }) => {
                     onChange={handleChangeDetails}
                     value={userDetails.password}
                     required
-                    className="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#C1C1C1] focus:border-[#C1C1C1] sm:text-sm"
                   />
                 </div>
                 <div className="text-red-600">
@@ -105,7 +105,7 @@ const SignUp = ({ userDetails, setUserDetails, setIsMailTrue, setOtp }) => {
               <div>
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-slate-900 hover:bg-slate-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-slate-900 hover:bg-slate-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#C1C1C1]"
                 >
                   CREATE ACCOUNT
                 </button>
